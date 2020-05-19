@@ -1,0 +1,15 @@
+spring:
+  mail:
+    host: smtp.163.com
+    port: 994 #465或者994
+    #protocol: smtp
+    username: eulerlcs@163.com
+    password: QREDKBVPKIKWEAMI
+    from: eulerlcs@163.com
+    properties:
+      mail:
+        smtp:
+          ssl:
+            enable: true
+          timeout: 30000
+          connectiontimeout: 20000

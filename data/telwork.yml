@@ -1,0 +1,26 @@
+telwork:
+  mail:
+    start:
+      param:
+        start_time_expect: "09:30"
+        end_time_expect: "18:30"
+        lunchbreak_start_expect: "12:00"
+        lunchbreak_end_expect: "13:00"
+      to:
+        - eulerlcs@163.com
+      #        cc:
+      #          - eulerlcs@163.com
+      subject: sample spring mail
+      text: |-
+        TO：Mr.abc
+
+        hello!
+
+        今日は${telwork.mail.start.param.start_time_expect}～${telwork.mail.start.param.end_time_expect}在宅勤務します。
+        ただいまから（${start_time_real}）勤務開始します。${telwork.mail.start.param.lunchbreak_start_expect}～${telwork.mail.start.param.lunchbreak_end_expect}に休憩をとる予定です。
+
+        以上、よろしくお願いいたします。
+        ----------------------------------------------------------------------------
+        PLEASE READ:This e-mail is confidential and intended for the named recipient only.
+        If you are not an intended recipient, please notify the sender and delete this e-mail.
+        ----------------------------------------------------------------------------

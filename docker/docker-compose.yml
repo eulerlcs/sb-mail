@@ -1,0 +1,11 @@
+version: '3.1'
+
+services:
+  sb-mail:
+    image: harbor.eulerlcs.io/stayhome/sb-mail
+    container_name: sbmail
+    volumes:
+      - /c/Users/Public/tmp:/data
+    environment:
+      - TZ=Asia/Tokyo
+      - spring.profiles.active=dev-163
